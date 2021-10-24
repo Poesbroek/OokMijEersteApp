@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OokMijnEersteApp.Food"
+             BackgroundColor="Black">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Frame Background="white" WidthRequest="300" CornerRadius="30">
+                    <Label Text="{Binding creature.hunger}" TextColor="Black" HorizontalOptions="Center" FontSize="20"></Label>
+                </Frame>
+            </StackLayout>
+            <Label BackgroundColor="Black" Padding="10"></Label>
+            <Grid>
+                <Image Source="{Binding CreatureImage, Mode=OneWay}" WidthRequest="200" HeightRequest="200">
+
+                </Image>
+                <Frame Opacity="0">
+                    <Frame.GestureRecognizers>
+                        <DropGestureRecognizer AllowDrop="True" Drop="FoodGiven"></DropGestureRecognizer>
+                    </Frame.GestureRecognizers>
+                </Frame>
+            </Grid>
+            <Label BackgroundColor="Black" Padding="20"></Label>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Image Source="broodnodig.png" WidthRequest="100" HeightRequest="100">
+                    <Image.GestureRecognizers>
+                        <DragGestureRecognizer CanDrag="True" DragStarting="FoodDrag"></DragGestureRecognizer>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Source="broodnodig.png" WidthRequest="100" HeightRequest="100">
+                    <Image.GestureRecognizers>
+                        <DragGestureRecognizer CanDrag="True" DragStarting="FoodDrag2"></DragGestureRecognizer>
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+
+            <Label BackgroundColor="Black" Padding="1"></Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

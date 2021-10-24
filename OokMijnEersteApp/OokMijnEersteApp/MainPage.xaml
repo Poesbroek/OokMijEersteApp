@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OokMijnEersteApp.MainPage"
+             BackgroundColor="Black">
+
+    <StackLayout>
+        <StackLayout Orientation="Horizontal" Spacing="10" HorizontalOptions="Center">
+            <Button Text="Feed" WidthRequest="120" Clicked="Feed"></Button>
+            <Button Text="Drink" WidthRequest="120" Clicked="Drink"></Button>
+            <Button Text="Play" WidthRequest="120" Clicked="Play"></Button>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Frame Background="white" WidthRequest="300">
+                <Label Text="Erik" TextColor="Black" HorizontalOptions="Center" FontSize="20"></Label>
+            </Frame>
+        </StackLayout>
+        <Label BackgroundColor="Black" Padding="10"></Label>
+            <Image Source="VibeoVriend.png"></Image>
+        <Label BackgroundColor="Black" Padding="1"></Label> 
+        <StackLayout Orientation="Horizontal" Spacing="10" HorizontalOptions="Center">
+            <Button Text="Sleep" WidthRequest="120" Clicked="Sleep"></Button>
+            <Button Text="Go to Park" WidthRequest="120" Clicked="Playground"></Button>
+            <Button Text="Show Stats" WidthRequest="120" Clicked="GotoStatPage"></Button>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

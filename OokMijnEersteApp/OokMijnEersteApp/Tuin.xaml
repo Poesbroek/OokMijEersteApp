@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OokMijnEersteApp.Tuin"
+             BackgroundColor="Black">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="Green" Padding="40" CornerRadius="0">
+                <Label Text="Tuin" HorizontalTextAlignment="Center" TextColor="Black" FontSize="36"></Label>
+            </Frame>
+            
+            <Frame BackgroundColor="White" Padding="150" CornerRadius="0">
+                <Label Text="Plaatje" HorizontalTextAlignment="Center" TextColor="Black" FontSize="36"></Label>
+            </Frame>
+
+            <Frame BackgroundColor="White" Padding="20" CornerRadius="0">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Image Source="Zaadje.png" WidthRequest="50" HeightRequest="25"></Image>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

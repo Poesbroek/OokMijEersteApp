@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OokMijnEersteApp.StatsPage"
+             BackgroundColor="Black">
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Frame Background="white" WidthRequest="300">
+                    <Label Text="Stats" TextColor="Black" HorizontalOptions="Center" FontSize="20"></Label>
+                </Frame>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Image Source="Hunger.png" WidthRequest="75" HeightRequest="75"></Image>
+                <Image Source="{Binding creature.hungerState}" WidthRequest="200" HeightRequest="10"></Image>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Image Source="thirst.png" WidthRequest="75" HeightRequest="75"></Image>
+                <Image Source="{Binding creature.thirstState}" WidthRequest="200" HeightRequest="10"></Image>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Image Source="Happyness.png" WidthRequest="75" HeightRequest="75"></Image>
+                <Image Source="{Binding creature.boredomState}" WidthRequest="200" HeightRequest="10"></Image>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Image Source="Energie.png" WidthRequest="75" HeightRequest="75"></Image>
+                <Image Source="{Binding creature.tiredState}" WidthRequest="200" HeightRequest="10"></Image>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Image Source="social.png" WidthRequest="75" HeightRequest="75"></Image>
+                <Image Source="{Binding creature.lonelinessState}" WidthRequest="200" HeightRequest="10"></Image>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Image Source="rust.png" WidthRequest="75" HeightRequest="75"></Image>
+                <Image Source="{Binding creature.stimulatedState}" WidthRequest="200" HeightRequest="10"></Image>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
